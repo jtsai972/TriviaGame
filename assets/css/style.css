@@ -1,0 +1,8 @@
+* {
+    box-sizing: border-box;
+    transition: all 0.5s ease;
+}
+
+body {
+    background: #EADEC7 url("../images/school.png") repeat;
+}
