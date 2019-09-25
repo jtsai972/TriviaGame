@@ -11,8 +11,7 @@ body {
     min-height: 100vh;
 }
 /* Basic font stuff */
-h1, h2, h3, 
-#start button { 
+h1, h2, h3, button, #timer { 
     font-family: "Vollkorn SC", Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -53,17 +52,19 @@ h3 { font-size: 1.5em; }
 
     /* General Styling */
     .hide { display: none; }
+    button {
+        background: #C7EADE;
+        border: 1px solid #444;
+        padding: 1rem;
+    }
 
     /* Style Start */
     #start {
         text-align: center;
     }
     #start button { 
-        background: #C7EADE;
-        border: 1px solid #444;
         font-size: 2em;
         margin: 2em auto;
-        padding: 1rem;
     }
 
     /* Style Timer */
@@ -96,6 +97,18 @@ h3 { font-size: 1.5em; }
                 text-transform: capitalize;
                 width: 25%;
             }
+        form button {
+            font-size: 1.5em;
+        }
+
+    /* Style Result */
+    #results {
+        margin-top: 2em;
+        text-align: center;
+    }
+        #results p {
+            margin: 1em auto;
+        }
 
 /* Media Queries */
 
