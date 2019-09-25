@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Vollkorn+SC&display=swap" rel="stylesheet">
+
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> 
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -14,22 +17,379 @@
     <title>Trivia Game - Basic</title>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <h1>Basic Trivia Game</h1>
-    </header>
 
-    <!-- Article -->
-    <article>
+<!-- Header -->
+<header>
+    <h1>Totally Trivial Trivia</h1>
+    <h2>Basic Edition</h2>
+</header>
 
-    </article>
+<!-- Main -->
+<main>
 
-    <!-- Footer -->
-    <footer>
-        <p>Created by Jasmine Tsai</p>
-    </footer>
+    <!-- Humble Beginnings -->
+    <section id="start">
+        <button >Start</button>
+    </section>
 
-    <!-- Scripts -->
-    <script type="text/javascript" src="assets/javascript/app.js"></script>
+    <!-- Timer -->
+    <div id="timer" class="hide">
+        <p>Time Remaining:</p><span id="time"></span> seconds
+    </div>
+
+    <!-- Questions will be here -->
+    <form id="questions" class="hide">
+        <!-- Question 1 -->
+        <fieldset>
+            <legend>Question 1:</legend>
+            <p>What was the first full length CGI movie?</p>
+            <div>
+                <label for="q1-a-bugs-life">
+                    <input 
+                        type="radio" 
+                        id="q1-a-bugs-life"
+                        name="movie" 
+                        value="incorrect">
+                    A Bug's Life
+                </label>
+                
+                <label for="q1-monsters-inc">
+                    <input 
+                        type="radio" 
+                        id="q1-monsters-inc" 
+                        name="movie" 
+                        value="incorrect">
+                    Monsters Inc.
+                </label>
+                
+                <label for="q1-toy-story">
+                    <input 
+                        type="radio" 
+                        id="q1-toy-story" 
+                        name="movie" 
+                        value="correct">
+                    Toy Story
+                </label>
+                
+                <label for="q1-lion-king">
+                    <input 
+                        type="radio" 
+                        id="q1-lion-king" 
+                        name="movie" 
+                        value="incorrect">
+                    The Lion King
+                </label>
+            </div>
+        </fieldset>
+        
+        <!-- Question 2 -->
+        <fieldset>
+            <legend>Question 2:</legend>
+            <p>Which of these is NOT a name of one of the Spice Girls?</p>
+            <div>
+                <label for="q2-sporty-spice">
+                    <input 
+                        type="radio" 
+                        id="q2-sporty-spice" 
+                        name="spicegirl" 
+                        value="incorrect">
+                    Sporty Spice
+                </label>
+
+                <label for="q2-fred-spice">
+                    <input 
+                        type="radio" 
+                        id="q2-fred-spice" 
+                        name="spicegirl" 
+                        value="correct">
+                    Fred Spice
+                </label>
+                
+                <label for="q2-scary-spice">
+                    <input 
+                        type="radio" 
+                        id="q2-scary-spice" 
+                        name="spicegirl" 
+                        value="incorrect">
+                    Scary Spice
+                </label>
+                
+                <label for="q2-posh-spice">
+                    <input 
+                        type="radio" 
+                        id="q2-posh-spice" 
+                        name="spicegirl" 
+                        value="incorrect">
+                    Posh Spice
+                </label>
+            </div>
+        </fieldset>
+
+        <!-- Question 3 -->
+        <fieldset>
+            <legend>Question 3:</legend>
+            <p>Which NBA team won the most titles in the 90s?</p>
+            <div>
+
+                <label for="q3-ny-knicks">
+                    <input 
+                        type="radio" 
+                        id="q3-ny-knicks" 
+                        name="nbaTeam" 
+                        value="incorrect">
+                    New York Knicks
+                </label>
+
+                <label for="q3-portland-trailblazers">
+                    <input 
+                        type="radio" 
+                        id="q3-portland-trailblazers" 
+                        name="nbaTeam" 
+                        value="incorrect">
+                    Portland Trailblazers
+                </label>
+
+                <label for="q3-la-lakers">
+                    <input 
+                        type="radio" 
+                        id="q3-la-lakers" 
+                        name="nbaTeam" 
+                        value="incorrect">
+                    Los Angeles Lakers
+                </label>
+                
+                <label for="q3-chicago-bulls">
+                    <input 
+                        type="radio" 
+                        id="q3-chicago-bulls" 
+                        name="nbaTeam" 
+                        value="correct">
+                    Chicago Bulls
+                </label>
+            </div>
+        </fieldset>
+
+        <!-- Question 4 -->
+        <fieldset>
+            <legend>Question 4:</legend>
+            <p>Which group released the hit song, "Smells Like Teen Spirit"?</p>
+            <div>
+                <label for="q4-nirvana">
+                    <input 
+                        type="radio" 
+                        id="q4-nirvana" 
+                        name="band" 
+                        value="correct">
+                    Nirvana
+                </label>
+                <label for="q4-backstreet-boys">
+                    <input 
+                        type="radio" 
+                        id="q4-backstreet-boys" 
+                        name="band" 
+                        value="incorrect">
+                    Backstreet Boys
+                </label>
+                <label for="q4-the-offspring">
+                    <input 
+                        type="radio" 
+                        id="q4-the-offspring" 
+                        name="band" 
+                        value="incorrect">
+                    The Offspring
+                </label>
+                <label for="q4-no-doubt">
+                    <input 
+                        type="radio" 
+                        id="q4-no-doubt" 
+                        name="band" 
+                        value="incorrect">
+                    No Doubt
+                </label>
+            </div>
+        </fieldset>
+
+        <!-- Question 5 -->
+        <fieldset>
+            <legend>Question 5:</legend>
+            <p>Which popular Disney movie featured the song, "Circle of?</p>
+            <div>
+                <label for="q5-aladdin">
+                    <input 
+                        type="radio" 
+                        id="q5-aladdin" 
+                        name="movie" 
+                        value="incorrect">
+                    Aladdin
+                </label>
+                <label for="q5-hercules">
+                    <input 
+                        type="radio" 
+                        id="q5-hercules" 
+                        name="movie" 
+                        value="incorrect">
+                    Hercules
+                </label>
+                <label for="q5-mulan">
+                    <input 
+                        type="radio" 
+                        id="q5-mulan" 
+                        name="movie" 
+                        value="incorrect">
+                    Mulan
+                </label>
+                <label for="q5-lion-king">
+                    <input 
+                        type="radio" 
+                        id="q5-lion-king" 
+                        name="movie" 
+                        value="correct">
+                    The Lion King
+                </label>
+            </div>
+        </fieldset>
+
+        <!-- Question 6 -->
+        <fieldset>
+            <legend>Question 6:</legend>
+            <p>Finish this line from "Fresh Prince of Bel-Air" theme song: "I whistled for a cab and when it came near, the license plate said ..."</p>
+            <div>
+                <label for="q6-dice">
+                    <input 
+                        type="radio" 
+                        id="q6-dice" 
+                        name="lyrics" 
+                        value="incorrect">
+                    Dice
+                </label>
+                <label for="q6-mirror">
+                    <input 
+                        type="radio" 
+                        id="q6-mirror" 
+                        name="lyrics" 
+                        value="incorrect">
+                    Mirror
+                </label>
+                <label for="q6-fresh">
+                    <input 
+                        type="radio" 
+                        id="q6-fresh" 
+                        name="lyrics" 
+                        value="correct">
+                    Fresh
+                </label>
+                <label for="q6-cab">
+                    <input 
+                        type="radio" 
+                        id="q6-cab" 
+                        name="lyrics" 
+                        value="incorrect">
+                    Cab
+                </label>
+            </div>
+        </fieldset>
+
+        <!-- Question 7 -->
+        <fieldset>
+            <legend>Question 7:</legend>
+            <p>What was Doug's best friend's name?</p>
+            <div>
+                <label for="q7-skeeter">
+                    <input 
+                        type="radio" 
+                        id="q7-skeeter" 
+                        name="friendName" 
+                        value="correct">
+                    Skeeter
+                </label>
+                <label for="q7-mark">
+                    <input 
+                        type="radio" 
+                        id="q7-mark" 
+                        name="friendName" 
+                        value="incorrect">
+                    Mark
+                </label>
+                <label for="q7-zach">
+                    <input 
+                        type="radio" 
+                        id="q7-zach" 
+                        name="friendName" 
+                        value="incorrect">
+                    Zach
+                </label>
+                <label for="q7-cody">
+                    <input 
+                        type="radio" 
+                        id="q7-cody" 
+                        name="friendName" 
+                        value="incorrect">
+                    Cody
+                </label>
+            </div>
+        </fieldset>
+
+        <!-- Question 8 -->
+        <fieldset>
+            <legend>Question 8:</legend>
+            <p>What was the name of the principal at Bayside High in "Saved By The Bell"?</p>
+            <div>
+                <label for="q8-zhou">
+                    <input 
+                        type="radio" 
+                        id="q8-zhou" 
+                        name="principalName" 
+                        value="incorrect">
+                    Mr. Zhou
+                </label>
+                <label for="q8-driggers">
+                    <input 
+                        type="radio" 
+                        id="q8-driggers" 
+                        name="principalName" 
+                        value="incorrect">
+                    Mr. Driggers
+                </label>
+                <label for="q8-belding">
+                    <input 
+                        type="radio" 
+                        id="q8-belding" 
+                        name="principalName" 
+                        value="correct">
+                    Mr. Belding
+                </label>
+                <label for="q8-page">
+                    <input 
+                        type="radio" 
+                        id="q8-page" 
+                        name="principalName" 
+                        value="incorrect">
+                    Mr. Page
+                </label>
+            </div>
+        </fieldset>
+    </form>
+    
+    <!-- Quiz results here -->
+    <section id="results" class="hide">
+        <h2>Time is up!</h2>
+        <p>Correct Answers: <span id="correct"></span></p>
+        <p>Incorrect Answers: <span id="incorrect"></span></p>
+        <p>Unanswered: <span id="unanswered"></span></p>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer>
+    <p>Created by Jasmine Tsai</p>
+</footer>
+
+<!-- Scripts -->
+<script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+
 </body>
 </html>
