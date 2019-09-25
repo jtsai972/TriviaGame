@@ -8,4 +8,4 @@ Welcome to Week 03's projects [Part 3 of 4]
 
 This is a basic trivia game that uses one big timer to time the entire quiz.
 
-The demo this is based on is [Unit #5 Basic Trivia Demo | Youtube](https://www.youtube.com/watch?v=fBIj8YsA9dk&feature=youtu.be)
+The demo this is based on is [Youtube - Unit #5 Basic Trivia Demo](https://www.youtube.com/watch?v=fBIj8YsA9dk)
